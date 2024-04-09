@@ -48,12 +48,7 @@ const About = () => {
 
      
 
-      <motion.div variants={textVariant()}>
-        <div style={{ marginTop: "100px", marginBottom: "5px" }}>
-          <p className={styles.sectionSubText}>Where I Live</p>
-          <h2 className={styles.sectionHeadText}>Location.</h2>
-        </div>
-      </motion.div>
+      
 
     
     </>
