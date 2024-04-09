@@ -22,10 +22,6 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.c>
-        <img src="ml2.png" alt="Malmi Withanage" />
-      </motion.c>
-
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
@@ -52,19 +48,13 @@ const About = () => {
 
       <motion.q>
         <div style={{ marginTop: "5px", marginBottom: "10px" }}>
-          <button className="bg-[#915EFF] py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary mt-50px">
-            <a
-              href="Resume_Malmi_Withanage.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <a href="Resume_Malmi_Withanage.pdf" download>
+            <button className="bg-[#915EFF] py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary mt-50px">
               Download Resume
-            </a>
-          </button>
+            </button>
+          </a>
         </div>
       </motion.q>
-
-      
 
       <motion.div variants={textVariant()}>
         <div style={{ marginTop: "100px", marginBottom: "5px" }}>

@@ -1,4 +1,5 @@
 import logo from "./m2.png";
+import malmi from "./ml2.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
