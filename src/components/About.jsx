@@ -23,7 +23,7 @@ const About = () => {
       </motion.div>
 
       <motion.c>
-        <img src="ml2.png" alt="Malmi Withanage" />
+        <img src="/assets/ml2.png" alt="Malmi Withanage" />
       </motion.c>
 
       <motion.p
