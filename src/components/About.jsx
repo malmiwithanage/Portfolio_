@@ -46,15 +46,7 @@ const About = () => {
       ))}
     </div> */}
 
-      <motion.q>
-        <div style={{ marginTop: "5px", marginBottom: "10px" }}>
-          <a href="Resume_Malmi_Withanage.pdf" download>
-            <button className="bg-[#915EFF] py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary mt-50px">
-              Download Resume
-            </button>
-          </a>
-        </div>
-      </motion.q>
+     
 
       <motion.div variants={textVariant()}>
         <div style={{ marginTop: "100px", marginBottom: "5px" }}>
@@ -63,20 +55,7 @@ const About = () => {
         </div>
       </motion.div>
 
-      <div>
-        <motion.o>
-          <div style={{ border: "0", radius: "15px" }}>
-            <iframe
-              src="https://maps.app.goo.gl/8UJBymTHVoxFHHDJA"
-              width="600"
-              height="450"
-              style={{ border: "0", radius: "15px" }}
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-        </motion.o>
-      </div>
+    
     </>
   );
 };
