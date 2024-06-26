@@ -17,6 +17,7 @@
     "@react-three/drei": "^9.105.2",
     "@react-three/fiber": "^8.16.1",
     "emailjs": "^4.0.3",
+    "file-saver": "^2.0.5",
     "framer-motion": "^11.0.25",
     "google-maps": "^4.3.3",
     "maath": "^0.10.7",
