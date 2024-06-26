@@ -5,15 +5,29 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { saveAs } from "file-saver"; // Import saveAs from file-saver
 
 import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const About = () => {
-  const pdfUrl = "https://raw.githubusercontent.com/malmiwithanage/Resume/main/Resume%20Malmi%20Withanage.pdf"; // Replace with your actual GitHub raw PDF URL
+const DownloadButton = () => {
+  const pdfUrl =
+    "https://raw.githubusercontent.com/malmiwithanage/Resume/main/Resume%20Malmi%20Withanage.pdf"; // Replace with your actual GitHub raw PDF URL
 
   const handleDownload = () => {
     saveAs(pdfUrl, "Resume_Malmi_Withanage.pdf"); // Trigger the download using file-saver
   };
 
+  return (
+    <motion.button
+      onClick={handleDownload}
+      className={`${styles.sectionButton} mt-4`}
+    >
+      <FontAwesomeIcon icon={faDownload} className="mr-2" />
+      Download Resume
+    </motion.button>
+  );
+};
+
+const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -38,15 +52,9 @@ const About = () => {
         organization's interests while fostering synergy and innovation.
       </motion.p>
 
-      <motion.button
-        onClick={handleDownload}
-        className={`${styles.sectionButton} mt-4`}
-      >
-        <FontAwesomeIcon icon={faDownload} className="mr-2" />
-        Download Resume
-      </motion.button>
+      <DownloadButton /> {/* Include the DownloadButton component here */}
     </>
   );
 };
 
-export default About;
+export default SectionWrapper(About, "about");
