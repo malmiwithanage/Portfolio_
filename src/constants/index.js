@@ -191,7 +191,34 @@ const testimonials = [
   },
 ];
 
+
+
 const projects = [
+  {
+    name: "AI Text Summarize Web Application",
+    description:
+    "AI Text Summarization Web Application is designed to streamline information consumption by providing concise summaries of web pages. Users can input the URL of any web page containing readable content, and the application utilizes integrated AI APIs to generate a summary. This summary captures the essence of the original content.",
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux Toolkit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: p3,
+    source_code_link: "https://github.com/malmiwithanage/Y1S2-Project",
+  },
   {
     name: "Hotel Reservations & Events Management System",
     description:
