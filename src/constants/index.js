@@ -25,7 +25,8 @@ import {
   threejs,
   p3,
   p4,
-  p5
+  p5,
+  p6
 } from "../assets";
 
 export const navLinks = [
@@ -320,7 +321,7 @@ const projects = [
       },
       
     ],
-    image: "",
+    image: p6,
     source_code_link: "https://github.com/malmiwithanage/ITP-MalmiWithanage",
   },
 ];

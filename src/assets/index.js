@@ -36,6 +36,7 @@ import tripguide from "./tripguide.png";
 import p3 from "./p3.png";
 import p4 from "./p4.png";
 import p5 from "./p5.png";
+import p5 from "./p6.png";
 
 export {
   logo,
@@ -68,5 +69,6 @@ export {
   tripguide,
   p3,
   p4,
-  p5
+  p5,
+  p6
 };
