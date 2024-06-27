@@ -217,25 +217,26 @@ const projects = [
       },
     ],
     image: p3,
-    source_code_link: "https://github.com/malmiwithanage/Y1S2-Project",
+    source_code_link: "https://github.com/malmiwithanage/ai_summerizer",
   },
   {
-    name: "Hotel Reservations & Events Management System",
+    name: "Hotel & Events Management System",
     description:
-      "Web-based platform that allows users to WeddingWise is designed to streamline bookings and efficiently coordinate events with ease., book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    ": The Hotel & Events Management System is tailored to facilitate customer wedding planning and organization. This comprehensive system enables users to effortlessly reserve venues, select from diverse wedding packages, and coordinate related services from catering to decorations and guest accommodations.",
     tags: [
       {
-        name: "JS",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "My SQL",
-        color: "green-text-gradient",
+        name: "PHP",
+        color: "blue-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "CSS",
+        color: "blue-text-gradient",
       },
+      
     ],
     image: carrent,
     source_code_link: "https://github.com/malmiwithanage/Y1S2-Project",
