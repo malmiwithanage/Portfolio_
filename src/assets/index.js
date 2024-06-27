@@ -35,6 +35,7 @@ import jobit from "./2.png";
 import tripguide from "./tripguide.png";
 import p3 from "./p3.png";
 import p4 from "./p4.png";
+import p5 from "./p5.png";
 
 export {
   logo,
@@ -67,4 +68,5 @@ export {
   tripguide,
   p3,
   p4,
+  p5
 };

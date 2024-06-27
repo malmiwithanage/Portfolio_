@@ -25,6 +25,7 @@ import {
   threejs,
   p3,
   p4,
+  p5
 } from "../assets";
 
 export const navLinks = [
@@ -222,7 +223,7 @@ const projects = [
   {
     name: "Hotel & Events Management System",
     description:
-    ": The Hotel & Events Management System is tailored to facilitate customer wedding planning and organization. This comprehensive system enables users to effortlessly reserve venues, select from diverse wedding packages, and coordinate related services from catering to decorations and guest accommodations.",
+    "The Hotel & Events Management System is tailored to facilitate customer wedding planning and organization. This comprehensive system enables users to effortlessly reserve venues, select from diverse wedding packages, and coordinate related services from catering to decorations and guest accommodations.",
     tags: [
       {
         name: "JavaScript",
@@ -244,87 +245,83 @@ const projects = [
   {
     name: "Hospital Management System",
     description:
-      "Web application that enables users to MediCare is a Hospital Management System designed to optimize medical facility operations and enhance patient care through efficient administration and coordination. for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+"The Hospital Management System is designed to streamline operations and enhance patient care by providing a comprehensive platform for healthcare professionals and patients. This system securely stores and manages detailed patient information, including medical history, treatments, prescriptions, and appointments.",
     tags: [
       {
-        name: "JS",
+        name: "Java",
         color: "blue-text-gradient",
       },
       {
-        name: "MY SQL",
-        color: "green-text-gradient",
+        name: "JavaScript",
+        color: "blue-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "CSS",
+        color: "blue-text-gradient",
       },
+      
     ],
     image: jobit,
-    source_code_link: "",
+    source_code_link: "https://github.com/malmiwithanage/Y2S1-Project/tree/main",
   },
   {
-    name: "AI Text Summarize Web Application",
+    name: "Task Management Android Application",
     description:
-      "Web application that enables users to MediCare is a Hospital Management System designed to optimize medical facility operations and enhance patient care through efficient administration and coordination. for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+"The Task Management Android Application is designed to streamline task organization and enhance productivity. This intuitive application allows users to efficiently manage tasks with essential functions such as adding, editing, deleting, reading, and searching tasks. It features a visually appealing and user-friendly interface to ensure a seamless user experience.",
     tags: [
       {
-        name: "JS",
+        name: "Kotlin",
+        color: "blue-text-gradient",
+      },
+      
+    ],
+    image: p4,
+    source_code_link: "https://github.com/malmiwithanage/ToDo-Android-Application",
+  },
+  {
+    name: "3D Portfolio Web Application",
+    description:
+"The 3D Portfolio Web Application is a showcase of my work using immersive 3D elements to engage visitors. It presents my projects, personal information, and includes contact functionality through Email.js. The application aims to provide an interactive experience that highlights my skills and projects effectively.",
+    tags: [
+      {
+        name: "React.js",
         color: "blue-text-gradient",
       },
       {
-        name: "MY SQL",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: p3,
-    source_code_link: "",
-  },
-  {
-    name: "Travel & Tourism Management System",
-    description:
-      "Web application that enables users to MediCare is a Hospital Management System designed to optimize medical facility operations and enhance patient care through efficient administration and coordination. for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "JS",
+        name: "Three.js",
         color: "blue-text-gradient",
       },
       {
-        name: "MY SQL",
-        color: "green-text-gradient",
+        name: "Email JS",
+        color: "blue-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "Vite",
+        color: "blue-text-gradient",
       },
+      {
+        name: "Tailwind CSS",
+        color: "blue-text-gradient",
+      },
+      
     ],
-    image: jobit,
-    source_code_link: "",
+    image: p5,
+    source_code_link: "https://github.com/malmiwithanage/Portfolio_",
   },
 
   {
-    name: "Time Management Android Application",
+    name: "Travel & Tourism Management System",
     description:
-      "Web application that enables users to MediCare is a Hospital Management System designed to optimize medical facility operations and enhance patient care through efficient administration and coordination. for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+" Travel and Tourism Management System tailored for Hotel Kaya Hikkaduwa offers a sophisticated platform designed to elevate guest experiences and streamline operations. This integrated system encompasses hotel bookings, restaurant reservations, curated travel packages, vehicle rentals, and event management, providing comprehensive services to guests and enhancing operational efficiency for the hotel.",
     tags: [
       {
-        name: "JS",
+        name: "MERN",
         color: "blue-text-gradient",
       },
-      {
-        name: "MY SQL",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      
     ],
-    image: p4,
-    source_code_link: "",
+    image: "",
+    source_code_link: "https://github.com/malmiwithanage/ITP-MalmiWithanage",
   },
 ];
 
