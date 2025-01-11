@@ -16,17 +16,18 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
+  xdev,
   tesla,
   shopify,
   carrent,
-  jobit,
-  tripguide,
-  threejs,
   p3,
+  threejs,
+  p1,
+  p2,
   p4,
   p5,
-  p6
+  p6,
+  p7
 } from "../assets";
 
 export const navLinks = [
@@ -46,19 +47,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Backend Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Full-Stack Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "3D Visual Developer",
     icon: creator,
   },
 ];
@@ -84,7 +85,10 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -109,61 +113,29 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
+  {
+    name: "docker",
+    icon: docker,
+  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Developer Intern",
+    company_name: "2xDev Pvt Ltd",
+    icon: xdev,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Jun 2024 – Dec 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Assisted in multiple stages of the development process, from initial design to final product delivery.",
+      "Collaborated with senior developers to build efficient and scalable web applications.",
+      "Contributed to debugging, testing, and ensuring the quality of the codebase.",
+      "Worked with React.js and Node.js technologies to support project development."
     ],
   },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  
+  
+  
 ];
 
 const testimonials = [
@@ -193,13 +165,32 @@ const testimonials = [
   },
 ];
 
-
-
 const projects = [
+  {
+    name: "Cactus Shop Web Application",
+    description:
+      "Ornamental Plant Design Web Application brings a fresh and personalized approach to home decor. Users can explore custom-designed ornamental plants tailored to their space, ensuring a unique blend of beauty and functionality. The platform combines expert design techniques and user preferences to deliver one-of-a-kind plant arrangements that enhance any home environment.",
+    tags: [
+      {
+        name: "Html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: p7,
+    source_code_link: "https://cacti-mei.netlify.app/", 
+  },
   {
     name: "AI Text Summarize Web Application",
     description:
-    "AI Text Summarization Web Application is designed to streamline information consumption by providing concise summaries of web pages. Users can input the URL of any web page containing readable content, and the application utilizes integrated AI APIs to generate a summary. This summary captures the essence of the original content.",
+      "AI Text Summarization Web Application is designed to streamline information consumption by providing concise summaries of web pages. Users can input the URL of any web page containing readable content, and the application utilizes integrated AI APIs to generate a summary. This summary captures the essence of the original content.",
     tags: [
       {
         name: "React.js",
@@ -207,24 +198,20 @@ const projects = [
       },
       {
         name: "TypeScript",
-        color: "blue-text-gradient",
+        color: "green-text-gradient",
       },
       {
-        name: "Redux Toolkit",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "blue-text-gradient",
+        name: "Tailwind",
+        color: "pink-text-gradient",
       },
     ],
-    image: p3,
+    image: p1,
     source_code_link: "https://github.com/malmiwithanage/ai_summerizer",
   },
   {
     name: "Hotel & Events Management System",
     description:
-    "The Hotel & Events Management System is tailored to facilitate customer wedding planning and organization. This comprehensive system enables users to effortlessly reserve venues, select from diverse wedding packages, and coordinate related services from catering to decorations and guest accommodations.",
+      "The Hotel & Events Management System is tailored to facilitate customer wedding planning and organization. This comprehensive system enables users to effortlessly reserve venues, select from diverse wedding packages, and coordinate related services from catering to decorations and guest accommodations.",
     tags: [
       {
         name: "JavaScript",
@@ -232,57 +219,41 @@ const projects = [
       },
       {
         name: "PHP",
-        color: "blue-text-gradient",
+        color: "green-text-gradient",
       },
       {
         name: "CSS",
-        color: "blue-text-gradient",
+        color: "pink-text-gradient",
       },
-      
     ],
-    image: carrent,
+    image: p2,
     source_code_link: "https://github.com/malmiwithanage/Y1S2-Project",
-  },
-  {
-    name: "Hospital Management System",
-    description:
-"The Hospital Management System is designed to streamline operations and enhance patient care by providing a comprehensive platform for healthcare professionals and patients. This system securely stores and manages detailed patient information, including medical history, treatments, prescriptions, and appointments.",
-    tags: [
-      {
-        name: "Java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "blue-text-gradient",
-      },
-      
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/malmiwithanage/Y2S1-Project/tree/main",
   },
   {
     name: "Task Management Android Application",
     description:
-"The Task Management Android Application is designed to streamline task organization and enhance productivity. This intuitive application allows users to efficiently manage tasks with essential functions such as adding, editing, deleting, reading, and searching tasks. It features a visually appealing and user-friendly interface to ensure a seamless user experience.",
+      "The Task Management Android Application is designed to streamline task organization and enhance productivity. This intuitive application allows users to efficiently manage tasks with essential functions such as adding, editing, deleting, reading, and searching tasks. It features a visually appealing and user-friendly interface to ensure a seamless user experience.",
     tags: [
       {
         name: "Kotlin",
         color: "blue-text-gradient",
       },
-      
+      {
+        name: "Android",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      },
     ],
-    image: p4,
+    image: p3,
     source_code_link: "https://github.com/malmiwithanage/ToDo-Android-Application",
   },
   {
     name: "3D Portfolio Web Application",
     description:
-"The 3D Portfolio Web Application is a showcase of my work using immersive 3D elements to engage visitors. It presents my projects, personal information, and includes contact functionality through Email.js. The application aims to provide an interactive experience that highlights my skills and projects effectively.",
+      "The 3D Portfolio Web Application is a showcase of my work using immersive 3D elements to engage visitors. It presents my projects, personal information, and includes contact functionality through Email.js. The application aims to provide an interactive experience that highlights my skills and projects effectively.",
     tags: [
       {
         name: "React.js",
@@ -290,33 +261,44 @@ const projects = [
       },
       {
         name: "Three.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Email JS",
-        color: "blue-text-gradient",
+        color: "green-text-gradient",
       },
       {
         name: "Vite",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: p4,
+    source_code_link: "https://github.com/malmiwithanage/Portfolio_",
+  },
+  {
+    name: "Hospital Management System",
+    description:
+      "The Hospital Management System is designed to streamline operations and enhance patient care by providing a comprehensive platform for healthcare professionals and patients. This system securely stores and manages detailed patient information, including medical history, treatments, prescriptions, and appointments.",
+    tags: [
+      {
+        name: "Java",
         color: "blue-text-gradient",
       },
       {
-        name: "Tailwind CSS",
-        color: "blue-text-gradient",
+        name: "Javascript",
+        color: "green-text-gradient",
       },
-      
+      {
+        name: "Css",
+        color: "pink-text-gradient",
+      },
     ],
     image: p5,
-    source_code_link: "https://github.com/malmiwithanage/Portfolio_",
+    source_code_link: "https://github.com/malmiwithanage/Y2S1-Project/tree/main",
   },
-
   {
     name: "Travel & Tourism Management System",
     description:
-" Travel and Tourism Management System tailored for Hotel Kaya Hikkaduwa offers a sophisticated platform designed to elevate guest experiences and streamline operations. This integrated system encompasses hotel bookings, restaurant reservations, curated travel packages, vehicle rentals, and event management, providing comprehensive services to guests and enhancing operational efficiency for the hotel.",
+      "Travel and Tourism Management System tailored for Hotel Kaya Hikkaduwa offers a sophisticated platform designed to elevate guest experiences and streamline operations. This integrated system encompasses hotel bookings, restaurant reservations, curated travel packages, vehicle rentals, and event management, providing comprehensive services to guests and enhancing operational efficiency for the hotel.",
     tags: [
       {
-        name: "MERN",
+        name: "MERN Stack",
         color: "blue-text-gradient",
       },
       

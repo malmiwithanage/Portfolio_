@@ -1,10 +1,12 @@
 import React from "react";
+import { saveAs } from "file-saver"; // Import the saveAs function
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
+import { faDownload } from '@fortawesome/free-solid-svg-icons'; // Import the download icon
+import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { saveAs } from "file-saver"; // Import saveAs from file-saver
 
 import { styles } from "../styles";
+import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -17,15 +19,45 @@ const DownloadButton = () => {
   };
 
   return (
-    <motion.button
-      onClick={handleDownload}
-      className={`${styles.sectionButton} mt-4`}
+  <motion.button
+    onClick={handleDownload}
+    className={`${styles.sectionButton} mt-4 bg-gradient-to-r from-[#b95ff6] to-[#02b495] hover:from-[#02b495] hover:to-[#b95ff6] text-white font-bold py-2 px-4 rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105`}
+  >
+    <FontAwesomeIcon icon={faDownload} className="mr-2" />
+    Download Resume
+  </motion.button>
+);
+
+}
+  
+
+const ServiceCard = ({ index, title, icon }) => (
+  <Tilt className='xs:w-[250px] w-full'>
+    <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
-      <FontAwesomeIcon icon={faDownload} className="mr-2" />
-      Download Resume
-    </motion.button>
-  );
-};
+      <div
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+      >
+        <img
+          src={icon}
+          alt='web-development'
+          className='w-16 h-16 object-contain'
+        />
+
+        <h3 className='text-white text-[20px] font-bold text-center'>
+          {title}
+        </h3>
+      </div>
+    </motion.div>
+  </Tilt>
+);
 
 const About = () => {
   return (
@@ -37,22 +69,25 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I am currently immersed in my undergraduate studies at the esteemed Sri
-        Lanka Institute of Information Technology, where I am continually honing
-        my skills and knowledge. Driven by a relentless pursuit of excellence, I
-        embody a resilient and ambitious spirit that propels me towards tackling
-        challenges head-on and exceeding expectations. My approach to tasks and
-        situations is characterized by a sophisticated blend of maturity and
-        responsibility, reflecting my commitment to delivering exceptional
-        results. My adeptness in navigating dynamic and competitive environments
-        is underscored by my exceptional interpersonal skills. Whether leading a
-        team or collaborating as part of one, I consistently prioritize the
-        organization's interests while fostering synergy and innovation.
+        I’m a software dev who’s all about building awesome things with 
+        TypeScript, JavaScript, and frameworks like React, Node.js, and 
+        Three.js. I’m a fast learner and love vibing with teams to create 
+        slick, scalable, and user-friendly solutions that actually make a 
+        difference. Can’t wait to bring my skills to your next big project and make an impact!
       </motion.p>
 
-      <DownloadButton /> {/* Include the DownloadButton component here */}
+    <motion.div>
+    <DownloadButton />
+
+    </motion.div>
+
+      <div className='mt-20 flex flex-wrap gap-10'>
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
     </>
   );
 };
