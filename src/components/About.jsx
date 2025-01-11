@@ -2,7 +2,7 @@ import React from "react";
 import { saveAs } from "file-saver"; // Import the saveAs function
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
 import { faDownload } from '@fortawesome/free-solid-svg-icons'; // Import the download icon
-import Tilt from "react-tilt";
+import { Tilt } from "react-tilt"; // Use named import
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
