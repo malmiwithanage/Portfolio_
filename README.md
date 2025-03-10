@@ -29,6 +29,6 @@
 👉 **Responsive Design**: Ensures optimal display and functionality across all devices.
 
 ## Live Website
-Check out the live website here: [3D Portfolio]([YOUR_LIVE_SITE_LINK_HERE](https://main--malmiwithanage.netlify.app/))
+Check out the live website here: [3D Portfolio](https://main--malmiwithanage.netlify.app/)
 
 
