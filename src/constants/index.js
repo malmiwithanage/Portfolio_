@@ -27,7 +27,9 @@ import {
   p4,
   p5,
   p6,
-  p7
+  p7,
+  p8,
+  p9,
 } from "../assets";
 
 export const navLinks = [
@@ -133,6 +135,21 @@ const experiences = [
       "Worked with React.js and Node.js technologies to support project development."
     ],
   },
+  {
+    title: "Junior Software Engineer",
+    company_name: "2xDev Pvt Ltd",
+    icon: xdev,
+    iconBg: "#383E56",
+    date: " From March 2025",
+    points: [
+      "Contributed to the development and maintenance of core company products across the full stack.",
+      "Followed software best practices, focusing on clean, scalable, and secure code",
+      "Collaborated with cross-functional teams and reported directly to supervisors",
+      "Improved application reliability by debugging, testing, and optimizing performance"
+
+
+    ],
+  },
   
   
   
@@ -166,10 +183,52 @@ const testimonials = [
 ];
 
 const projects = [
+
+{
+    name: "SkillNexus – Skill Sharing & Learning Platform",
+    description: "SkillNexus is a collaborative web-based platform that enables users to share their skills and learn from a community of like-minded individuals.",
+        tags: [
+      {
+        name: "Spring Boot",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React ",
+        color: "green-text-gradient",
+      },
+     
+      
+    ],
+    image: p9,
+    source_code_link: "https://github.com/malmiwithanage/SkillNexusX",
+  },
+
+{
+    name: "Zentry Inspired Animated Website",
+    description:
+      "This is a visually-rich, animated website I built for learning and exploring advanced UI/UX techniques, inspired by Zentry.",
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GSAP",
+        color: "pink-text-gradient",
+      },
+      
+    ],
+    image: p8,
+    source_code_link: "https://animated-website-coral.vercel.app/",
+  },
+
   {
     name: "Cactus Shop Web Application",
-    description:
-      "Ornamental Plant Design Web Application brings a fresh and personalized approach to home decor. Users can explore custom-designed ornamental plants tailored to their space, ensuring a unique blend of beauty and functionality. The platform combines expert design techniques and user preferences to deliver one-of-a-kind plant arrangements that enhance any home environment.",
+    description: "The platform combines expert design techniques and user preferences to deliver one-of-a-kind plant arrangements that enhance any home environment.",
     tags: [
       {
         name: "Html",
@@ -189,8 +248,7 @@ const projects = [
   },
   {
     name: "AI Text Summarize Web Application",
-    description:
-      "AI Text Summarization Web Application is designed to streamline information consumption by providing concise summaries of web pages. Users can input the URL of any web page containing readable content, and the application utilizes integrated AI APIs to generate a summary. This summary captures the essence of the original content.",
+    description: "AI Text Summarization Web Application is designed to streamline information consumption by providing concise summaries of web pages.",
     tags: [
       {
         name: "React.js",
@@ -208,31 +266,10 @@ const projects = [
     image: p1,
     source_code_link: "https://github.com/malmiwithanage/ai_summerizer",
   },
-  {
-    name: "Hotel & Events Management System",
-    description:
-      "The Hotel & Events Management System is tailored to facilitate customer wedding planning and organization. This comprehensive system enables users to effortlessly reserve venues, select from diverse wedding packages, and coordinate related services from catering to decorations and guest accommodations.",
-    tags: [
-      {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "PHP",
-        color: "green-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: p2,
-    source_code_link: "https://github.com/malmiwithanage/Y1S2-Project",
-  },
+  
   {
     name: "Task Management Android Application",
-    description:
-      "The Task Management Android Application is designed to streamline task organization and enhance productivity. This intuitive application allows users to efficiently manage tasks with essential functions such as adding, editing, deleting, reading, and searching tasks. It features a visually appealing and user-friendly interface to ensure a seamless user experience.",
+    description: "The Task Management Android Application is designed to streamline task organization and enhance productivity.",
     tags: [
       {
         name: "Kotlin",
@@ -250,52 +287,12 @@ const projects = [
     image: p3,
     source_code_link: "https://github.com/malmiwithanage/ToDo-Android-Application",
   },
-  {
-    name: "3D Portfolio Web Application",
-    description:
-      "The 3D Portfolio Web Application is a showcase of my work using immersive 3D elements to engage visitors. It presents my projects, personal information, and includes contact functionality through Email.js. The application aims to provide an interactive experience that highlights my skills and projects effectively.",
-    tags: [
-      {
-        name: "React.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Three.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Vite",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: p4,
-    source_code_link: "https://github.com/malmiwithanage/Portfolio_",
-  },
-  {
-    name: "Hospital Management System",
-    description:
-      "The Hospital Management System is designed to streamline operations and enhance patient care by providing a comprehensive platform for healthcare professionals and patients. This system securely stores and manages detailed patient information, including medical history, treatments, prescriptions, and appointments.",
-    tags: [
-      {
-        name: "Java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: p5,
-    source_code_link: "https://github.com/malmiwithanage/Y2S1-Project/tree/main",
-  },
+  
+  
+  
   {
     name: "Travel & Tourism Management System",
-    description:
-      "Travel and Tourism Management System tailored for Hotel Kaya Hikkaduwa offers a sophisticated platform designed to elevate guest experiences and streamline operations. This integrated system encompasses hotel bookings, restaurant reservations, curated travel packages, vehicle rentals, and event management, providing comprehensive services to guests and enhancing operational efficiency for the hotel.",
+    description: "Travel and Tourism Management System tailored for Hotel Kaya Hikkaduwa offers a sophisticated platform designed to elevate guest experiences and streamline operations.",
     tags: [
       {
         name: "MERN Stack",
