@@ -30,6 +30,7 @@ import {
   p7,
   p8,
   p9,
+  p10,
 } from "../assets";
 
 export const navLinks = [
@@ -201,6 +202,25 @@ const projects = [
     ],
     image: p9,
     source_code_link: "https://github.com/malmiwithanage/SkillNexusX",
+  },
+
+  {
+    name: "Digital Vehicle Fine Payment System",
+    description: "A cross-platform solution for managing and paying vehicle fines with secure QR code verification, real-time alerts, and blacklist tracking.",
+        tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Spring Boot",
+        color: "green-text-gradient",
+      },
+     
+      
+    ],
+    image: p10,
+    source_code_link: "https://github.com/malmiwithanage/digital-vehicle-fine-management-system",
   },
 
 {
